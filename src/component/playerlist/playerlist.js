@@ -21,8 +21,9 @@ const handLer=props.handLer
            
            <div className="main col-3 d-flex  col-md-3 mt-5 mb-5  
            shadow p-3 mb-5 bg-white rounded">
- 
+
  <div className=" playerDetail">
+            
             <img src={image} alt=""/>
             <h2>ID:{id}</h2>
             <h2>Name:{name}</h2>

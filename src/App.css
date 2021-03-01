@@ -1,7 +1,14 @@
 .App {
   text-align: center;
 }
-
+.title{
+      text-align: center;
+      padding: 50px;
+      font-size: 100px;
+      color: lightseagreen;
+      background-color: rgb(235, 242, 245);
+      
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

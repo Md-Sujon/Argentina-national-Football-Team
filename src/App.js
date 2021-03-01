@@ -21,7 +21,8 @@ function App() {
   
   return (
     <div className="App">
-      
+       <h1 className="title  ">Argentina national Football 
+              Team</h1>
       <Cart count={count} data={data}></Cart>  
   {
     data.map(user=><UserList user={user} Cart={user} handLer={handLer}></UserList>)
