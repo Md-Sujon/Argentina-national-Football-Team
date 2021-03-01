@@ -1,0 +1,28 @@
+/* .allPlayer{
+display: flex;
+} */
+
+.playerDetail{
+width:995px;
+box-shadow: lightblue;
+border: 4px solid lightblue;
+padding: 5px;
+}
+.playerDetail img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border:5px solid goldenrod;
+    
+}
+
+.userDetail button{
+    width: 150px;
+    height: 30px;
+    background:goldenrod;
+    margin-bottom: 10px;
+}
+.main{
+    margin-left:20px;
+    float: left;
+}

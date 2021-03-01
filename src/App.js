@@ -1,23 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+import fakeData from './data/data.json'
+import React ,{useEffect, useState} from 'react';
+import UserList from './component/playerlist/playerlist';
+import Cart from './component/cart/cart';
 
 function App() {
+  const [data,setData]=useState([])
+  const [count,setCount]=useState([])
+
+  useEffect(()=>{
+         setData(fakeData)
+         
+  },[])
+
+  const handLer=(user)=>{
+  const newCount=[...count,user];
+  setCount(newCount)
+}
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Cart count={count} data={data}></Cart>  
+  {
+    data.map(user=><UserList user={user} Cart={user} handLer={handLer}></UserList>)
+  }
+  
     </div>
   );
 }
